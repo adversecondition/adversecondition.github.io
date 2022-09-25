@@ -164,6 +164,7 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     word-wrap: break-word;
+    background-color: black;
 }
 
 body:before {
@@ -182,6 +183,19 @@ body:before {
     background-size: 6px, auto;
     background-position: center, 0% 0%;
     background-repeat: repeat, repeat;
+
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 body:after {
