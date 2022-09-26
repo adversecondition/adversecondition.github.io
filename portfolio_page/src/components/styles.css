@@ -164,7 +164,7 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     word-wrap: break-word;
-    background-color: black;
+    background-color: ghostwhite;
 }
 
 body:before {
@@ -179,12 +179,13 @@ body:before {
     transform: scale(1);
     width: 100vw;
     z-index: 0;
-    background-image: url(''), linear-gradient(45deg, #2F2D47 8%, #000000 100%);
+    /*background-image: url(''), linear-gradient(45deg, #2F2D47 8%, #000000 100%);*/
+    background-image: url(''), linear-gradient(45deg, #a8a4e8 1%, ghostwhite 100%);
     background-size: 6px, auto;
     background-position: center, 0% 0%;
     background-repeat: repeat, repeat;
 
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -197,6 +198,19 @@ body:before {
         opacity: 1;
     }
 }
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
+    body:before {
+        background-image: url(''), linear-gradient(45deg, #2F2D47 8%, #000000 100%);
+
+    }
+}
+
+
 
 body:after {
     background-color: #000000;

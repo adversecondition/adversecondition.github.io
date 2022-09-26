@@ -24,6 +24,9 @@ export default {
     ContainerSkills,
     ContainerAbout,
     ContainerHead
+  },
+  methods: {
+
   }
 }
 </script>
