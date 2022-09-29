@@ -159,34 +159,36 @@ textarea {
 }
 
 body {
-    --text-color: #222;
-    --bkg-before: ghostwhite;
-    --bkg-after: linear-gradient(45deg, #a8a4e8 1%, ghostwhite 100%);
-    --bkg-head: linear-gradient(45deg, #D9B2B2 0%, #96A9EB 100%);
-    /*background-image: linear-gradient(30deg, #A464A1 15%, #3B5DAD 85%);*/
+    --bg-light-before: ghostwhite;
+    --bg-light-after: linear-gradient(45deg, #a8a4e8 1%, ghostwhite 100%);
+    --bg-light-head: linear-gradient(45deg, #D9B2B2 0%, #96A9EB 100%);
 
-;
+    --bg-dark-before: black;
+    --bg-dark-after: linear-gradient(45deg, #2F2D47 8%, #000000 100%);
+    --bg-dark-head: linear-gradient(45deg, #AD8E8E 0%, #8798D3 100%);
+}
+
+body {
+    --bg-before: var(--bg-light-before);
+    --bg-after: var(--bg-light-after);
+    --bg-head: var(--bg-light-head);
 }
 body.dark-theme {
-    --text-color: #eee;
-    --bkg-before: black;
-    --bkg-after: linear-gradient(45deg, #2F2D47 8%, #000000 100%);
-    --bkg-head: linear-gradient(45deg, #AD8E8E 0%, #8798D3 100%);
+    --bg-before: var(--bg-dark-before);
+    --bg-after:  var(--bg-dark-after);
+    --bg-head:   var(--bg-dark-head);
 }
 
 @media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
     body {
-        --text-color: #eee;
-        --bkg-before: black;
-        --bkg-after: linear-gradient(45deg, #2F2D47 8%, #000000 100%);
-        --bkg-head: linear-gradient(45deg, #AD8E8E 0%, #8798D3 100%);
+        --bg-before: var(--bg-dark-before);
+        --bg-after:  var(--bg-dark-after);
+        --bg-head:   var(--bg-dark-head);
     }
     body.light-theme {
-        --text-color: #222;
-        --bkg-before: ghostwhite;
-        --bkg-after: linear-gradient(45deg, #a8a4e8 1%, ghostwhite 100%);
-        --bkg-head: linear-gradient(45deg, #D9B2B2 0%, #96A9EB 100%);
+        --bg-before: var(--bg-light-before);
+        --bg-after: var(--bg-light-after);
+        --bg-head: var(--bg-light-head);
     }
 }
 
@@ -196,7 +198,7 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     word-wrap: break-word;
-    background-color: var(--bkg-before);
+    background-color: var(--bg-before);
 }
 
 body:before {
@@ -211,7 +213,7 @@ body:before {
     width: 100vw;
     z-index: 0;
     background-size: 6px, auto;
-    background: var(--bkg-after);
+    background: var(--bg-after);
 
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
@@ -223,21 +225,56 @@ body:before {
     100% {  opacity: 1; }
 }
 
-body:after {
-    /*background-color: #000000;*/
+body.dark-theme:after {
     content: '';
     display: block;
     height: 100%;
+    position: absolute;
     left: 0;
-    opacity: 0;
-    position: fixed;
+    right: 0;
     top: 0;
-    transform: scale(1);
-    transition: opacity 5s ease-in-out 0s, visibility 5s 0s;
-    visibility: hidden;
     width: 100%;
-    z-index: 1;
+    animation: fadeInAnimation ease .3s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    /*transition: opacity 300ms;*/
+    background: var(--bg-light-after);
 }
+
+body.light-theme:after{
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    animation: fadeInAnimation ease .3s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    /*transition: opacity 300ms;*/
+    background: var(--bg-dark-after);
+}
+
+/*todo retrigger animation, therefore it needs to be included also here :*/
+/*https://stackoverflow.com/questions/6268508/restart-animation-in-css3-any-better-way-than-removing-the-element*/
+/*body:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    animation: fadeInAnimation ease 3s;*/
+/*    animation-fill-mode: forwards;*/
+/*    animation-direction: reverse;*/
+/*    background: red;*/
+
+/*}*/
+
 
 body.is-loading:after {
     opacity: 1;
@@ -694,7 +731,7 @@ p.style2 span.p:nth-child(n + 2) {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: var(--bkg-head);
+    background: var(--bg-head);
     /*background-size: 256px, cover;*/
     /*background-position: center, 0% 0%;*/
     /*background-repeat: repeat, repeat;*/

@@ -105,7 +105,6 @@ export default {
 <style scoped>
 
 label {
-
   width: 6rem;
   height: 2.5rem;
   position: relative;
@@ -180,14 +179,20 @@ input:checked + label svg.moon {
 }
 #toggle-container{
   position: fixed;
+  display: flex;
   top: 4rem;
   right: 2.5rem;
-  /*transform: rotate(90deg);*/
+  transition: .3s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
 }
 @media (max-width: 800px) {
   #toggle-container {
     top: 6rem;
-    right: 0rem;
+    right: 0;
     transform: rotate(90deg);
   }
   label svg.sun,
