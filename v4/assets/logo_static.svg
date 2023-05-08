@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1032 1032" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .B{
+                stroke: currentColor;
+                fill: none;
+                stroke-width: 32px;
+            }
+        </style>
+    </defs>
+    <g transform="translate(516,516) scale(33,33)">
+        <path vector-effect="non-scaling-stroke" d="m7.05 11.73 0-14.7674-5.67 12.8208-2.79 0-5.64-12.8208 0 14.7674-4.68 0 0-23.46 6.33 0 5.4 12.8879 5.43-12.8879 6.3 0 0 23.46-4.68 0z"/>
+    </g>
+
+    <g class="B" transform="translate(16,16)">
+        <path d="M0 500 0 1000 1000 1000 1000 0 0 0 0 500"/>
+    </g>
+</svg>
