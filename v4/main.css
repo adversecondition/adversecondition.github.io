@@ -344,7 +344,7 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: calc(100dvh - var(--content-top-spacing));
+    height: calc(100svh - var(--content-top-spacing));
     min-height: 30rem;
 }
 
