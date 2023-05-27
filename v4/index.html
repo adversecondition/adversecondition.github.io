@@ -1,182 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-    <!-- <link rel="icon" href="i3.svg"> -->
-
-    <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="red" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" /> -->
-    <title>Michael Mente</title>
-
-</head>
-
-<body class="preload" onload="document.querySelector('body').classList.remove('preload')">
-
-    <div class="loading_screen">
-        <svg class="loading_icon" viewBox="0 0 1032 1032" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <style>
-                    .B{
-                        fill: none;
-                        stroke-width: 32px;
-                        stroke-width: 2rem;
-                        stroke-dasharray: 4000;
-                        stroke-dashoffset: 4000;
-                        animation: dash 1.5s ease-in-out forwards;
-                    }
-                    .M{
-                        animation: fadein 2s ease-in-out forwards;
-                    }
-                    @keyframes dash {
-                        to { stroke-dashoffset: 0; }
-                    }
-                    @keyframes fadein{
-                        0% { opacity:0; }
-                        50% { opacity:0; }
-                        100% { opacity:1; }
-                    }
-                </style>
-            </defs>
-            <g class="M" transform="translate(516,516) scale(33,33)">
-                <path vector-effect="non-scaling-stroke" d="m7.05 11.73 0-14.7674-5.67 12.8208-2.79 0-5.64-12.8208 0 14.7674-4.68 0 0-23.46 6.33 0 5.4 12.8879 5.43-12.8879 6.3 0 0 23.46-4.68 0z"/>
-            </g>
-            <g class="B" transform="translate(16,16)">
-                <path d="M0 500 0 1000 1000 1000 1000 499"/>
-            </g>
-            <g class="B" transform="translate(16,16)">
-                <path d="M1000 500 1000 0 0 0 0 501"/>
-            </g>
-        </svg>
-    </div>
-
-    <header>
-        <nav>
-            <div>
-                <a href="index.html">
-                    <svg class="logo_icon"  viewBox="0 0 1030 1030" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M748.65 903.09V415.766L561.54 838.852h-92.07L283.35 415.766V903.09H128.91V128.91H337.8L516 554.21l179.19-425.3h207.9v774.18H748.65z"/><path d="M0 500v500h1000V0H0v500" transform="translate(16 16)" style="fill:none;stroke-width:32px"/></svg>
-                </a>
-            </div>
-            
-            <div class="header_right">
-                <ol class="nav_list">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ol>
-                <a class="button" target="_blank" rel="noopener noreferrer" href="https://v4.brittanychiang.com/">
-                    Resume
-                </a>
-            </div>
-        </nav>
-    </header>
-    
-    <div class="side-container right">
-        <a class="email" href="mailto:michael@mmente.dev">michael@mmente.dev</a>
-    </div>
-
-    <div class="side-container left">
-        <div >
-            <ul class="socials">
-                <li>
-                    <a href="https://github.com/whiskeywolke" aria-label="GitHub" target="_blank" rel="noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <title>GitHub</title>
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                            ></path>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/michael-mente-b0739a143/" aria-label="Linkedin" target="_blank" rel="noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <title>LinkedIn</title>
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/whiskeywolke" aria-label="Codepen" target="_blank" rel="noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <title>CodePen</title>
-                            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-                            <line x1="12" y1="22" x2="12" y2="15.5"></line>
-                            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-                            <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
-                            <line x1="12" y1="2" x2="12" y2="8.5"></line>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width">
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+		<meta name="generator" content="Astro v2.5.5">
+		<title>Michael Mente</title>
+	<link rel="stylesheet" href="/_astro/index.3b73514d.css" /><script type="module" src="/_astro/hoisted.c9285dbe.js"></script></head>
+	<body>
+		
+	<div class="loading_screen astro-G2NBZZ2Z">
+    <svg class="loading_icon astro-G2NBZZ2Z" viewBox="0 0 1032 1032" xmlns="http://www.w3.org/2000/svg">
+        <defs class="astro-G2NBZZ2Z">
+            <style>
+                .B{
+                    fill: none;
+                    stroke-width: 32px;
+                    stroke-width: 2rem;
+                    stroke-dasharray: 4000;
+                    stroke-dashoffset: 4000;
+                    animation: dash 1.5s ease-in-out forwards;
+                }
+                .M{
+                    animation: fadein 2s ease-in-out forwards;
+                }
+                @keyframes dash {
+                    to { stroke-dashoffset: 0; }
+                }
+                @keyframes fadein{
+                    0% { opacity:0; }
+                    50% { opacity:0; }
+                    100% { opacity:1; }
+                }
+            </style>
+        </defs>
+        <g class="M astro-G2NBZZ2Z" transform="translate(516,516) scale(33,33)">
+            <path vector-effect="non-scaling-stroke" d="m7.05 11.73 0-14.7674-5.67 12.8208-2.79 0-5.64-12.8208 0 14.7674-4.68 0 0-23.46 6.33 0 5.4 12.8879 5.43-12.8879 6.3 0 0 23.46-4.68 0z" class="astro-G2NBZZ2Z"></path>
+        </g>
+        <g class="B astro-G2NBZZ2Z" transform="translate(16,16)">
+            <path d="M0 500 0 1000 1000 1000 1000 499" class="astro-G2NBZZ2Z"></path>
+        </g>
+        <g class="B astro-G2NBZZ2Z" transform="translate(16,16)">
+            <path d="M1000 500 1000 0 0 0 0 501" class="astro-G2NBZZ2Z"></path>
+        </g>
+    </svg>
+</div>
+    <header class="astro-YMHDP2RL">
+    <nav class="astro-YMHDP2RL">
+        <div class="astro-YMHDP2RL">
+            <a href="index.html" class="astro-YMHDP2RL">
+                <svg class="logo_icon astro-YMHDP2RL" viewBox="0 0 1030 1030" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M748.65 903.09V415.766L561.54 838.852h-92.07L283.35 415.766V903.09H128.91V128.91H337.8L516 554.21l179.19-425.3h207.9v774.18H748.65z" class="astro-YMHDP2RL"></path><path d="M0 500v500h1000V0H0v500" transform="translate(16 16)" style="fill:none;stroke-width:32px" class="astro-YMHDP2RL"></path></svg>
+            </a>
         </div>
-    </div>
 
+        <div class="header_right astro-YMHDP2RL">
+            <ol class="nav_list astro-YMHDP2RL">
+                <li class="astro-YMHDP2RL">
+                        <a href="#about" class="astro-YMHDP2RL">About</a>
+                    </li><li class="astro-YMHDP2RL">
+                        <a href="#experience" class="astro-YMHDP2RL">Experience</a>
+                    </li><li class="astro-YMHDP2RL">
+                        <a href="#work" class="astro-YMHDP2RL">Work</a>
+                    </li><li class="astro-YMHDP2RL">
+                        <a href="#contact" class="astro-YMHDP2RL">Contact</a>
+                    </li>
+            </ol>
+            <a class="hero-button astro-YMHDP2RL" target="_blank" rel="noopener noreferrer" href="https://v4.brittanychiang.com/">
+                Resume
+            </a>
+        </div>
 
-    <div class="content">
-        <div class="main">
-            
-            <div class="hello">
-                <h1>Hi, my name is</h1>
-                <h2>Michael Mente</h2>
-                <h3>I build software.</h3>
-                <p class="hello-text">
-                    I'm a software engineer specializing in building and designing network and cloud native applications. 
-                    Currently, I'm focused on building client side applications at <a href="https://www.bosch.com/" >Bosch</a>.
-                </p>
+    </nav>
+</header>
+	<main class="astro-J7PV25F6">
+		<div class="astro-J7PV25F6">
+            <div class="hello astro-BBE6DXRZ">
+    <h1 class="astro-BBE6DXRZ">Hi, my name is</h1>
+    <h2 class="astro-BBE6DXRZ">Michael Mente</h2>
+    <h3 class="astro-BBE6DXRZ">I build software.</h3>
+    <p class="hello-text astro-BBE6DXRZ">
+        I'm a software engineer specializing in building and designing network and cloud native applications. 
+        Currently, I'm focused on building client side applications at <a href="https://www.bosch.com/" class="astro-BBE6DXRZ">Bosch</a>.
+    </p>
 
-                <a class="button" href="index.html">
-                    Check out my Github!
-                </a>
-            </div>
-
-            <div class="section" id="about">
+    <a class="hero-button astro-BBE6DXRZ" href="index.html">
+        Check out my Github!
+    </a>
+</div>
+            <div class="section astro-J7PV25F6" id="about">
                 <h1>About Me</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Tortor condimentum lacinia quis vel eros donec. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Auctor neque vitae tempus quam pellentesque nec. Vel quam elementum pulvinar etiam non quam lacus suspendisse. Mattis enim ut tellus elementum. Non consectetur a erat nam at lectus. Ut tellus elementum sagittis vitae. Suspendisse in est ante in nibh. Quam elementum pulvinar etiam non quam lacus. At auctor urna nunc id cursus. Risus feugiat in ante metus dictum at. Ut etiam sit amet nisl purus in. Lacus sed turpis tincidunt id aliquet risus. Ultricies mi quis hendrerit dolor magna. Consectetur a erat nam at lectus. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Sapien faucibus et molestie ac feugiat sed.
-                Sit amet risus nullam eget felis eget nunc. Bibendum enim facilisis gravida neque convallis a. A scelerisque purus semper eget duis at tellus at. Libero justo laoreet sit amet cursus sit amet dictum. Adipiscing commodo elit at imperdiet dui. Pharetra sit amet aliquam id diam maecenas ultricies. Non enim praesent elementum facilisis leo vel fringilla est. Ultricies integer quis auctor elit sed vulputate mi sit amet. Amet mattis vulputate enim nulla aliquet. Id volutpat lacus laoreet non curabitur gravida arcu ac. Interdum velit laoreet id donec.
-                Id diam vel quam elementum pulvinar etiam non quam. Felis donec et odio pellentesque diam. Ullamcorper a lacus vestibulum sed. Metus dictum at tempor commodo ullamcorper. Vel eros donec ac odio tempor orci. Ac turpis egestas sed tempus. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Sed faucibus turpis in eu mi bibendum neque egestas congue. Viverra aliquet eget sit amet tellus cras. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Tortor condimentum lacinia quis vel eros donec. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Auctor neque vitae tempus quam pellentesque nec. Vel quam elementum pulvinar etiam non quam lacus suspendisse. Mattis enim ut tellus elementum. Non consectetur a erat nam at lectus. Ut tellus elementum sagittis vitae. Suspendisse in est ante in nibh. Quam elementum pulvinar etiam non quam lacus. At auctor urna nunc id cursus. Risus feugiat in ante metus dictum at. Ut etiam sit amet nisl purus in. Lacus sed turpis tincidunt id aliquet risus. Ultricies mi quis hendrerit dolor magna. Consectetur a erat nam at lectus. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Sapien faucibus et molestie ac feugiat sed.
+    Sit amet risus nullam eget felis eget nunc. Bibendum enim facilisis gravida neque convallis a. A scelerisque purus semper eget duis at tellus at. Libero justo laoreet sit amet cursus sit amet dictum. Adipiscing commodo elit at imperdiet dui. Pharetra sit amet aliquam id diam maecenas ultricies. Non enim praesent elementum facilisis leo vel fringilla est. Ultricies integer quis auctor elit sed vulputate mi sit amet. Amet mattis vulputate enim nulla aliquet. Id volutpat lacus laoreet non curabitur gravida arcu ac. Interdum velit laoreet id donec.
+    Id diam vel quam elementum pulvinar etiam non quam. Felis donec et odio pellentesque diam. Ullamcorper a lacus vestibulum sed. Metus dictum at tempor commodo ullamcorper. Vel eros donec ac odio tempor orci. Ac turpis egestas sed tempus. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Sed faucibus turpis in eu mi bibendum neque egestas congue. Viverra aliquet eget sit amet tellus cras. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum.
             </div>
 
-            <div class="section"id="experience">
-                <h1>Experience</h1>
+            <div class="section astro-J7PV25F6" id="experience">
+                <h1 class="astro-J7PV25F6">Experience</h1>
                 Enim ut tellus elementum sagittis vitae. Sit amet volutpat consequat mauris nunc congue nisi vitae. Eget nunc scelerisque viverra mauris. Massa massa ultricies mi quis. Egestas sed tempus urna et pharetra pharetra massa massa. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Augue neque gravida in fermentum et. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Orci eu lobortis elementum nibh tellus molestie nunc.
                 Egestas congue quisque egestas diam in arcu. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Tempus urna et pharetra pharetra massa massa ultricies mi. Nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi. Fames ac turpis egestas maecenas. Scelerisque viverra mauris in aliquam. Integer eget aliquet nibh praesent. Ut faucibus pulvinar elementum integer enim. Porta nibh venenatis cras sed felis eget velit. Erat pellentesque adipiscing commodo elit at imperdiet dui. At consectetur lorem donec massa sapien faucibus. Habitant morbi tristique senectus et netus et. Sem viverra aliquet eget sit amet tellus cras adipiscing. At lectus urna duis convallis convallis tellus.
                 Risus viverra adipiscing at in tellus integer feugiat scelerisque. Ac odio tempor orci dapibus. Arcu non sodales neque sodales ut. In massa tempor nec feugiat nisl pretium fusce id. Quam id leo in vitae turpis massa. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Suscipit tellus mauris a diam maecenas sed. Est pellentesque elit ullamcorper dignissim. Suscipit adipiscing bibendum est ultricies integer quis. Viverra accumsan in nisl nisi scelerisque. Nibh tortor id aliquet lectus proin. Nulla posuere sollicitudin aliquam ultrices sagittis. Nisi lacus sed viverra tellus. Quis viverra nibh cras pulvinar mattis. Mauris a diam maecenas sed enim ut sem viverra. Cras sed felis eget velit aliquet sagittis id. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Nec ultrices dui sapien eget mi proin. Nulla facilisi nullam vehicula ipsum a arcu cursus.
                 Nisl rhoncus mattis rhoncus urna neque. Integer malesuada nunc vel risus commodo. At tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui faucibus in ornare quam viverra. Faucibus scelerisque eleifend donec pretium vulputate. Accumsan lacus vel facilisis volutpat est velit. Viverra mauris in aliquam sem fringilla ut morbi. Nulla pellentesque dignissim enim sit amet venenatis. Massa id neque aliquam vestibulum morbi blandit cursus. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Quis auctor elit sed vulputate mi sit amet mauris. Eget nunc lobortis mattis aliquam faucibus purus in massa. Ac tincidunt vitae semper quis lectus nulla at. Eu nisl nunc mi ipsum faucibus vitae aliquet. Senectus et netus et malesuada fames. Varius vel pharetra vel turpis nunc eget. Mi ipsum faucibus vitae aliquet nec.
             </div>
 
-            <div class="section" id="work">
-                <h1>Some Things I’ve Built</h1>
+            <div class="section astro-J7PV25F6" id="work">
+                <h1 class="astro-J7PV25F6">Some Things I’ve Built</h1>
                 Sed turpis tincidunt id aliquet risus feugiat in. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Sed egestas egestas fringilla phasellus. Et sollicitudin ac orci phasellus egestas tellus rutrum. Quis eleifend quam adipiscing vitae proin. Malesuada fames ac turpis egestas integer eget. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eu ultrices vitae auctor eu augue. Commodo elit at imperdiet dui accumsan sit amet nulla. Dignissim sodales ut eu sem. Arcu dictum varius duis at consectetur lorem donec massa sapien. Nec ultrices dui sapien eget mi. Morbi quis commodo odio aenean sed.
                 Vestibulum lorem sed risus ultricies tristique nulla. Aliquet enim tortor at auctor urna. Vel turpis nunc eget lorem. Mauris sit amet massa vitae tortor condimentum. Amet tellus cras adipiscing enim eu. Rhoncus mattis rhoncus urna neque viverra justo nec. Neque ornare aenean euismod elementum nisi. Feugiat sed lectus vestibulum mattis. Aenean sed adipiscing diam donec. Sed tempus urna et pharetra. Nec ullamcorper sit amet risus nullam eget felis.
             </div>
 
-            <div class="section" id="contact">
-                <h1>Get In Touch</h1>
+            <div class="section astro-J7PV25F6" id="contact">
+                <h1 class="astro-J7PV25F6">Get In Touch</h1>
                 Praesent semper feugiat nibh sed pulvinar proin. Aliquam faucibus purus in massa tempor nec. At varius vel pharetra vel turpis nunc eget lorem dolor. Pharetra et ultrices neque ornare. Elementum eu facilisis sed odio morbi quis commodo. Arcu non odio euismod lacinia at quis risus. Rutrum tellus pellentesque eu tincidunt tortor. Dignissim sodales ut eu sem integer vitae. Eget nullam non nisi est sit amet facilisis. Pellentesque massa placerat duis ultricies.
-                Design inspired from <a href="https://brittanychiang.com/">brittanychiang</a><br><br>
+                Design inspired from <a href="https://brittanychiang.com/" class="astro-J7PV25F6">brittanychiang</a><br class="astro-J7PV25F6"><br class="astro-J7PV25F6">
             </div>
+            <h1 class="astro-XHQDJ3OG">Choose color palette</h1>
 
+<div id="palettes" class="palette-container astro-XHQDJ3OG">
+      <div style="background-color: #030303" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #030303" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #ffffff" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #8c8c8c" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #ffa500" class="palette-color accent-color astro-XHQDJ3OG"></div>
         </div>
+      </div><div style="background-color: #f5f5f5" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #f5f5f5" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #000000" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #13141d" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #ffa500" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #16161a" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #16161a" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #fffffe" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #94a1b2" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #7f5af0" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #fffffe" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #fffffe" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #2b2c34" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #2b2c34" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #6246ea" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #0f0e17" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #0f0e17" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #fffffe" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #a7a9be" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #ff8906" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #fffffe" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #fffffe" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #00214d" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #1b2d45" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #fde24f" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #fffffe" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #fffffe" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #181818" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #2e2e2e" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #4fc4cf" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #55423d" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #55423d" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #fffffe" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #fff3ec" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #e78fb3" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #fffffe" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #fffffe" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #272343" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #2d334a" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #ffd803" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #004643" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #004643" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #fffffe" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #abd1c6" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #f9bc60" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #f8f5f2" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #f8f5f2" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #232323" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #222525" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #078080" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div><div style="background-color: #000814" class="palette astro-XHQDJ3OG">
+        <div class="palette-inner-wrap astro-XHQDJ3OG">
+            <div style="background-color: #000814" class="palette-color background-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #FFFFFF" class="palette-color primary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #8c8c8c" class="palette-color secondary-color astro-XHQDJ3OG"></div>
+            <div style="background-color: #FCA311" class="palette-color accent-color astro-XHQDJ3OG"></div>
+        </div>
+      </div>
+
+</div>
+            <h1 class="astro-LC6OF2CQ">Build your own palette</h1>
+<div class="wrap astro-LC6OF2CQ">
+  <div class="half astro-LC6OF2CQ">
+    <div class="colorPicker astro-LC6OF2CQ"></div>
+  </div>
+
+    <div class="value-container astro-LC6OF2CQ">
+
+      <div class="readout astro-LC6OF2CQ">
+        <div class="astro-LC6OF2CQ">Current Color: <input id="hexInput" class="astro-LC6OF2CQ"> <div id="color-preview" class="astro-LC6OF2CQ"></div></div>
+        <div id="values" class="astro-LC6OF2CQ"></div>
+      </div>
+
+      <div class="button-box astro-LC6OF2CQ">
+        <input class="regular-button astro-LC6OF2CQ" id="accent" type="button" value="Set Accent">
+        <input class="regular-button astro-LC6OF2CQ" id="primary" type="button" value="Set Primary">
+        <input class="regular-button astro-LC6OF2CQ" id="secondary" type="button" value="Set Secondary">
+        <input class="regular-button astro-LC6OF2CQ" id="background" type="button" value="Set Background">
+      </div>
+
+      <div class="palette hero-button astro-LC6OF2CQ" id="background-color-preview1">
+        <div class="palette-inner-wrap astro-LC6OF2CQ">
+            <div class="palette-color astro-LC6OF2CQ" id="background-color-preview2"></div>
+            <div class="palette-color astro-LC6OF2CQ" id="primary-color-preview"></div>
+            <div class="palette-color astro-LC6OF2CQ" id="secondary-color-preview"></div>
+            <div class="palette-color astro-LC6OF2CQ" id="accent-color-preview"></div>
+        </div>
+      </div>
+
     </div>
-</body>
-</html>
+
+</div>
+
+<br class="astro-LC6OF2CQ">
+<br class="astro-LC6OF2CQ">
+<br class="astro-LC6OF2CQ">
+		</div>
+	</main>
+	<footer class="astro-J7PV25F6">
+		<div class="side-container left astro-L4RSCIKG">
+    <div class="astro-L4RSCIKG">
+        <!-- icons from https://lucide.dev/ -->
+        <ul class="socials astro-L4RSCIKG">
+            <li class="astro-L4RSCIKG">
+                <a href="https://github.com/whiskeywolke" aria-label="GitHub" target="_blank" rel="noreferrer" class="astro-L4RSCIKG">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="astro-L4RSCIKG">
+                        <title>GitHub</title>
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" class="astro-L4RSCIKG"></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2" class="astro-L4RSCIKG"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="astro-L4RSCIKG">
+                <a href="https://www.linkedin.com/in/michael-mente-b0739a143/" aria-label="Linkedin" target="_blank" rel="noreferrer" class="astro-L4RSCIKG">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="astro-L4RSCIKG">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" class="astro-L4RSCIKG"></path>
+                        <rect width="4" height="12" x="2" y="9" class="astro-L4RSCIKG"></rect><circle cx="4" cy="4" r="2" class="astro-L4RSCIKG"></circle>
+                    </svg>
+                </a>
+            </li>
+            <li class="astro-L4RSCIKG">
+                <a href="https://codepen.io/whiskeywolke" aria-label="Codepen" target="_blank" rel="noreferrer" class="astro-L4RSCIKG">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="astro-L4RSCIKG">
+                        <title>CodePen</title>
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" class="astro-L4RSCIKG"></polygon><line x1="12" x2="12" y1="22" y2="15.5" class="astro-L4RSCIKG"></line>
+                        <polyline points="22 8.5 12 15.5 2 8.5" class="astro-L4RSCIKG"></polyline>
+                        <polyline points="2 15.5 12 8.5 22 15.5" class="astro-L4RSCIKG"></polyline>
+                        <line x1="12" x2="12" y1="2" y2="8.5" class="astro-L4RSCIKG"></line>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		<div class="side-container right astro-7NCNY44I">
+    <a class="email astro-7NCNY44I" href="mailto:michael@mmente.dev">michael@mmente.dev</a>
+</div>
+	</footer>
+
+	</body></html>
